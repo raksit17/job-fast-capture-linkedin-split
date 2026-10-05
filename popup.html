@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Job Fast Capture</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main>
+    <h1>Job Fast Capture</h1>
+    <div id="build">v0.7.0 • Feed Auto Scroll Fixed</div>
+
+    <div class="row">
+      <button id="scan">Auto scroll + scan</button>
+      <button id="clear" class="secondary">Clear</button>
+    </div>
+
+    <div id="status">Ready</div>
+
+    <label>
+      API endpoint
+      <input id="endpoint" value="http://localhost:3000/api/jobs/import" />
+    </label>
+
+    <label class="check">
+      <input type="checkbox" id="autoSend" />
+      Send to API after scan
+    </label>
+
+    <div class="stats">
+      <span>Saved</span>
+      <strong id="count">0</strong>
+    </div>
+
+    <div class="row">
+      <button id="send" class="secondary">Send API</button>
+      <button id="json" class="secondary">JSON</button>
+      <button id="csv" class="secondary">CSV</button>
+    </div>
+
+    <script src="popup.js"></script>
+  </main>
+</body>
+</html>
